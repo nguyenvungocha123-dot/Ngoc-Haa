@@ -1,0 +1,1178 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IELTS Journey – Khai Phá Tiềm Năng, Chinh Phục Băng Điểm</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ══════════════════════════════
+     NAVBAR
+════════════════════════════════ -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#" data-page="home">
+          <img
+            src="assets/logo.png"
+            alt="IELTS Journey Logo"
+            class="navbar-logo"
+          />
+          <div class="brand-text">
+            <span class="brand-ielts">IELTS JOURNEY</span>
+            <span class="brand-journey">Khai Phá · Chinh Phục</span>
+          </div>
+        </a>
+
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <i class="bi bi-list fs-4" style="color: var(--blue)"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav mx-auto gap-1">
+            <li class="nav-item">
+              <a class="nav-link active-tab" href="#" data-page="home"
+                ><i class="bi bi-house me-1"></i>Tổng quan</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-page="setup"
+                ><i class="bi bi-sliders me-1"></i>Thiết lập</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-page="chatbot"
+                ><i class="bi bi-chat-dots me-1"></i>Chatbot</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-page="exercises"
+                ><i class="bi bi-journal-check me-1"></i>Bài tập</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-page="pronunciation"
+                ><i class="bi bi-soundwave me-1"></i>Phát âm</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-page="evaluation"
+                ><i class="bi bi-bar-chart me-1"></i>Đánh giá</a
+              >
+            </li>
+          </ul>
+          <a class="btn-nav-cta nav-link" href="#" data-page="setup">
+            <i class="bi bi-rocket-takeoff me-1"></i>Bắt đầu ngay
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ══════════════════════════════
+     PAGE: HOME
+════════════════════════════════ -->
+    <div id="page-home" class="page active">
+      <!-- Hero Banner -->
+      <section class="hero">
+        <div class="hero-slider">
+          <div class="hero-slide active">
+            <img src="assets/banner.png" alt="IELTS Journey Banner" />
+          </div>
+          <div class="hero-slide">
+            <img src="assets/banner2.png" alt="IELTS Journey Banner 2" />
+          </div>
+        </div>
+        <!-- Dots -->
+        <div class="slider-dots">
+          <span class="dot active" onclick="goToSlide(0)"></span>
+          <span class="dot" onclick="goToSlide(1)"></span>
+        </div>
+        <!-- Arrows -->
+        <button class="slider-arrow prev" onclick="changeSlide(-1)">
+          &#8249;
+        </button>
+        <button class="slider-arrow next" onclick="changeSlide(1)">
+          &#8250;
+        </button>
+      </section>
+
+      <!-- Stats Bar -->
+      <div class="stats-bar">
+        <div class="container">
+          <div class="row align-items-center text-center g-3">
+            <div class="col stat-item">
+              <span class="stat-icon">🌍</span>
+              <div class="stat-num">4+</div>
+              <div class="stat-lbl">Ngôn ngữ hỗ trợ</div>
+            </div>
+            <div class="col-auto d-none d-md-block">
+              <div class="stat-divider"></div>
+            </div>
+            <div class="col stat-item">
+              <span class="stat-icon">📈</span>
+              <div class="stat-num">Band 0–7.5+</div>
+              <div class="stat-lbl">Lộ trình chia band</div>
+            </div>
+            <div class="col-auto d-none d-md-block">
+              <div class="stat-divider"></div>
+            </div>
+            <div class="col stat-item">
+              <span class="stat-icon">📝</span>
+              <div class="stat-num">83+</div>
+              <div class="stat-lbl">Câu hỏi bài tập</div>
+            </div>
+            <div class="col-auto d-none d-md-block">
+              <div class="stat-divider"></div>
+            </div>
+            <div class="col stat-item">
+              <span class="stat-icon">🎯</span>
+              <div class="stat-num">4 kỹ năng</div>
+              <div class="stat-lbl">Nghe · Nói · Đọc · Viết</div>
+            </div>
+            <div class="col-auto d-none d-md-block">
+              <div class="stat-divider"></div>
+            </div>
+            <div class="col stat-item">
+              <span class="stat-icon">⚡</span>
+              <div class="stat-num">24/7</div>
+              <div class="stat-lbl">AI hỗ trợ</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Band Roadmap -->
+      <section class="section">
+        <div class="container">
+          <div class="row g-5 align-items-start">
+            <div class="col-lg-5">
+              <div class="section-label">Lộ trình học</div>
+              <h2 class="section-title">
+                Lộ Trình Chia Band<br />Rõ Ràng & Hiệu Quả
+              </h2>
+              <div class="title-line"></div>
+              <p class="section-sub mb-4">
+                Từ mất gốc đến Band 7.5+, hệ thống AI tự điều chỉnh nội dung phù
+                hợp với từng cấp độ của bạn.
+              </p>
+
+              <div class="d-flex flex-column gap-3">
+                <div class="band-card">
+                  <div class="d-flex align-items-center gap-3">
+                    <div
+                      class="feat-icon icon-green mb-0"
+                      style="
+                        width: 42px;
+                        height: 42px;
+                        font-size: 1.2rem;
+                        flex-shrink: 0;
+                      "
+                    >
+                      🌱
+                    </div>
+                    <div>
+                      <div class="band-range">Band 0 – 4.5</div>
+                      <div class="band-label">
+                        MẤT GỐC / CƠ BẢN — Xây nền tảng vững chắc
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="band-card">
+                  <div class="d-flex align-items-center gap-3">
+                    <div
+                      class="feat-icon icon-blue mb-0"
+                      style="
+                        width: 42px;
+                        height: 42px;
+                        font-size: 1.2rem;
+                        flex-shrink: 0;
+                      "
+                    >
+                      ⚡
+                    </div>
+                    <div>
+                      <div class="band-range">Band 5.0 – 6.0</div>
+                      <div class="band-label">
+                        TĂNG TỐC / TRUNG CẤP — Đẩy nhanh tiến độ
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="band-card">
+                  <div class="d-flex align-items-center gap-3">
+                    <div
+                      class="feat-icon icon-orange mb-0"
+                      style="
+                        width: 42px;
+                        height: 42px;
+                        font-size: 1.2rem;
+                        flex-shrink: 0;
+                      "
+                    >
+                      🏆
+                    </div>
+                    <div>
+                      <div class="band-range">Band 6.5 – 7.5+</div>
+                      <div class="band-label">
+                        BỨT PHÁ / NÂNG CAO — Chinh phục mục tiêu
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <div class="section-label">Tính năng</div>
+              <h2 class="section-title">Điểm Nổi Bật Của Hệ Thống</h2>
+              <div class="title-line"></div>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="feat-card fade-up">
+                    <div class="feat-icon icon-blue">
+                      <i class="bi bi-chat-dots-fill"></i>
+                    </div>
+                    <h5>Chatbot Hội Thoại AI</h5>
+                    <p>
+                      Luyện hội thoại theo chủ đề & cấp độ. AI tự động sửa lỗi
+                      ngữ pháp theo thời gian thực.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="feat-card fade-up fade-up-1">
+                    <div class="feat-icon icon-orange">
+                      <i class="bi bi-pencil-square"></i>
+                    </div>
+                    <h5>Bài Tập Tự Động 83+</h5>
+                    <p>
+                      5 dạng bài: Điền từ, Trắc nghiệm, Dịch câu, Sắp xếp câu,
+                      Nối từ — 4 ngôn ngữ.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="feat-card fade-up fade-up-2">
+                    <div class="feat-icon icon-teal">
+                      <i class="bi bi-mic-fill"></i>
+                    </div>
+                    <h5>Kiểm Tra Phát Âm</h5>
+                    <p>
+                      Audio TTS mẫu, phiên âm IPA chuẩn quốc tế, waveform
+                      animation sinh động.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="feat-card fade-up fade-up-3">
+                    <div class="feat-icon icon-navy">
+                      <i class="bi bi-people-fill"></i>
+                    </div>
+                    <h5>Lớp Nhỏ · Tương Tác Cao</h5>
+                    <p>
+                      Sĩ số lớp nhỏ, tương tác cao. Mock test định kỳ & hỗ trợ
+                      24/7 từ AI tutor.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="feat-card fade-up fade-up-4">
+                    <div class="feat-icon icon-green">
+                      <i class="bi bi-book-fill"></i>
+                    </div>
+                    <h5>Giáo Trình Chuẩn Quốc Tế</h5>
+                    <p>
+                      Nội dung cập nhật theo đề thi IELTS mới nhất. Luyện đủ 4
+                      kỹ năng Nghe-Nói-Đọc-Viết.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="feat-card fade-up">
+                    <div class="feat-icon icon-orange">
+                      <i class="bi bi-bar-chart-fill"></i>
+                    </div>
+                    <h5>Đánh Giá & Theo Dõi</h5>
+                    <p>
+                      So sánh AI vs giáo viên thực. Theo dõi tiến độ, điểm số
+                      theo từng bài tập.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Banner -->
+      <section class="section" style="padding: 2.5rem 0">
+        <div class="container">
+          <div class="highlight-box text-center">
+            <h3
+              style="
+                font-family: &quot;Barlow Condensed&quot;, sans-serif;
+                font-weight: 800;
+                font-size: 2rem;
+                color: var(--navy);
+                margin-bottom: 0.5rem;
+              "
+            >
+              ĐĂNG KÝ HỌC THỬ MIỄN PHÍ NGAY!
+            </h3>
+            <p style="color: var(--muted); margin-bottom: 1.5rem">
+              <i class="bi bi-globe me-1 text-blue"></i> www.ieltsjourney.edu.vn
+              &nbsp;|&nbsp;
+              <i class="bi bi-telephone me-1 text-orange"></i> Hotline:
+              0987.654.321 &nbsp;|&nbsp;
+              <i class="bi bi-geo-alt me-1 text-blue"></i> 123 Đường Sư Vạn
+              Hạnh, Q.10, TP.HCM
+            </p>
+            <a
+              href="#"
+              class="btn-orange-c"
+              data-page="setup"
+              style="font-size: 1rem; padding: 0.9rem 2.5rem"
+            >
+              <i class="bi bi-rocket-takeoff"></i> Bắt đầu ngay hôm nay
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- /page-home -->
+
+    <!-- ══════════════════════════════
+     PAGE: SETUP
+════════════════════════════════ -->
+    <div id="page-setup" class="page">
+      <div class="section">
+        <div class="container" style="max-width: 780px">
+          <div class="section-label">Bước 1</div>
+          <h2 class="section-title mb-1">Thiết Lập Học Tập</h2>
+          <div class="title-line"></div>
+          <p class="section-sub mb-4">
+            Chọn ngôn ngữ, cấp độ và chủ đề để AI cá nhân hoá lộ trình học cho
+            bạn
+          </p>
+
+          <div class="setup-panel">
+            <!-- Language -->
+            <div class="mb-4">
+              <label class="form-lbl"
+                ><i class="bi bi-translate me-1 text-blue"></i> Ngôn ngữ muốn
+                học</label
+              >
+              <div class="select-wrap">
+                <select class="form-sel" id="lang-select">
+                  <option value="english">🇺🇸 Tiếng Anh (English)</option>
+                  <option value="japanese">🇯🇵 Tiếng Nhật (日本語)</option>
+                  <option value="korean">🇰🇷 Tiếng Hàn (한국어)</option>
+                  <option value="french">🇫🇷 Tiếng Pháp (Français)</option>
+                </select>
+              </div>
+            </div>
+            <div class="divider"></div>
+
+            <!-- Level -->
+            <div class="mb-4">
+              <label class="form-lbl"
+                ><i class="bi bi-speedometer2 me-1 text-blue"></i> Cấp độ / Band
+                hiện tại</label
+              >
+              <div class="level-chips">
+                <button class="level-chip selected" data-level="A1">
+                  A1 – Mất gốc
+                </button>
+                <button class="level-chip" data-level="A2">A2 – Cơ bản</button>
+                <button class="level-chip" data-level="B1">
+                  B1 – Trung cấp (Band 5–6)
+                </button>
+                <button class="level-chip" data-level="B2">
+                  B2 – Nâng cao (Band 6.5+)
+                </button>
+                <button class="level-chip" data-level="C1">
+                  C1 – Cao cấp (Band 7.5+)
+                </button>
+              </div>
+            </div>
+            <div class="divider"></div>
+
+            <!-- Topics -->
+            <div class="mb-4">
+              <label class="form-lbl"
+                ><i class="bi bi-bookmark-fill me-1 text-orange"></i> Chủ đề hội
+                thoại (chọn ít nhất 3)</label
+              >
+              <div class="topic-grid">
+                <button
+                  class="topic-chip selected"
+                  data-topic="Giới thiệu bản thân"
+                >
+                  👤 Giới thiệu bản thân
+                </button>
+                <button class="topic-chip" data-topic="Mua sắm & giao dịch">
+                  🛒 Mua sắm & giao dịch
+                </button>
+                <button class="topic-chip" data-topic="Du lịch & chỉ đường">
+                  ✈️ Du lịch & chỉ đường
+                </button>
+                <button class="topic-chip" data-topic="Ăn uống & nhà hàng">
+                  🍜 Ăn uống & nhà hàng
+                </button>
+                <button class="topic-chip" data-topic="Công việc & nghề nghiệp">
+                  💼 Công việc & nghề nghiệp
+                </button>
+                <button class="topic-chip" data-topic="Gia đình & bạn bè">
+                  👨‍👩‍👧 Gia đình & bạn bè
+                </button>
+                <button class="topic-chip" data-topic="Sức khỏe & y tế">
+                  🏥 Sức khỏe & y tế
+                </button>
+                <button class="topic-chip" data-topic="Tin tức & thời sự">
+                  📰 Tin tức & thời sự
+                </button>
+              </div>
+            </div>
+            <div class="divider"></div>
+
+            <!-- AI Tools -->
+            <div class="mb-4">
+              <label class="form-lbl"
+                ><i class="bi bi-cpu-fill me-1 text-blue"></i> Công cụ AI đề
+                xuất</label
+              >
+              <div class="row g-2 mt-1">
+                <div class="col-auto">
+                  <div
+                    style="
+                      background: var(--blue-light);
+                      border: 1.5px solid var(--blue-mid);
+                      border-radius: 10px;
+                      padding: 0.5rem 1rem;
+                      font-size: 0.82rem;
+                      font-weight: 600;
+                      color: var(--blue-dark);
+                    "
+                  >
+                    <i class="bi bi-chat-left-dots me-1"></i> ChatGPT – Chatbot
+                    & bài tập
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div
+                    style="
+                      background: var(--orange-light);
+                      border: 1.5px solid #fde4b5;
+                      border-radius: 10px;
+                      padding: 0.5rem 1rem;
+                      font-size: 0.82rem;
+                      font-weight: 600;
+                      color: var(--orange-dark);
+                    "
+                  >
+                    <i class="bi bi-volume-up me-1"></i> ElevenLabs / Google TTS
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div
+                    style="
+                      background: var(--blue-light);
+                      border: 1.5px solid var(--blue-mid);
+                      border-radius: 10px;
+                      padding: 0.5rem 1rem;
+                      font-size: 0.82rem;
+                      font-weight: 600;
+                      color: var(--blue-dark);
+                    "
+                  >
+                    <i class="bi bi-images me-1"></i> Canva AI – Minh hoạ
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="btn-orange-c w-100"
+              id="start-chat-btn"
+              style="justify-content: center; font-size: 1rem; padding: 1rem"
+            >
+              <i class="bi bi-rocket-takeoff-fill"></i> Bắt đầu luyện tập ngay
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /page-setup -->
+
+    <!-- ══════════════════════════════
+     PAGE: CHATBOT
+════════════════════════════════ -->
+    <div id="page-chatbot" class="page">
+      <div class="section">
+        <div class="container" style="max-width: 820px">
+          <div class="section-label">Tính năng 01</div>
+          <h2 class="section-title mb-1">Chatbot Luyện Hội Thoại</h2>
+          <div class="title-line"></div>
+          <p class="section-sub mb-4">
+            Hội thoại với AI Tutor — nhận phản hồi và sửa lỗi ngữ pháp ngay lập
+            tức
+          </p>
+
+          <div class="chat-wrap">
+            <div class="chat-header">
+              <div class="chat-avatar-wrap">🤖</div>
+              <div>
+                <div style="font-weight: 800; font-size: 0.97rem; color: #fff">
+                  IELTS Journey AI Tutor
+                  <span
+                    style="
+                      font-size: 0.7rem;
+                      background: rgba(255, 255, 255, 0.2);
+                      border-radius: 50px;
+                      padding: 0.15rem 0.6rem;
+                      margin-left: 0.5rem;
+                      font-weight: 600;
+                    "
+                  >
+                    Powered by ChatGPT
+                  </span>
+                </div>
+                <div class="d-flex align-items-center gap-1 mt-1">
+                  <div class="online-dot"></div>
+                  <span
+                    style="font-size: 0.75rem; color: rgba(255, 255, 255, 0.75)"
+                    >Online · System prompt theo cấp độ · Sửa lỗi tự động</span
+                  >
+                </div>
+              </div>
+              <div class="chat-topic-badge" id="chat-topic-display">
+                Giới thiệu bản thân · A1
+              </div>
+            </div>
+
+            <div class="chat-msgs" id="chat-msgs">
+              <div class="msg-row">
+                <div class="msg-ava ai-ava">🤖</div>
+                <div class="msg-body">
+                  <div class="msg-bubble ai-bubble">
+                    👋 Chào mừng đến với <strong>IELTS Journey</strong>! Hãy
+                    thiết lập cấp độ và chủ đề, hoặc bắt đầu nhắn tin ngay!
+                  </div>
+                  <div class="msg-time">Hệ thống</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="chat-input-area">
+              <button class="btn-voice" id="voice-btn" title="Ghi âm">
+                <i class="bi bi-mic"></i>
+              </button>
+              <textarea
+                class="chat-textarea"
+                id="chat-input"
+                rows="1"
+                placeholder="Nhập tin nhắn... (Enter gửi, Shift+Enter xuống dòng)"
+              ></textarea>
+              <button class="btn-send" id="send-btn" title="Gửi">
+                <i class="bi bi-send-fill"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Demo dialogues -->
+          <div class="mt-4">
+            <div class="section-label">Demo hội thoại mẫu — ChatGPT với System Prompt theo cấp độ</div>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="feat-card">
+                  <div class="ex-meta">
+                    <span class="ex-tag tag-fill">A1 · Giới thiệu</span>
+                  </div>
+                  <p
+                    style="
+                      font-size: 0.85rem;
+                      color: var(--muted);
+                      line-height: 1.65;
+                    "
+                  >
+                    <strong style="color: var(--text)">User:</strong> Hello, my
+                    name is Minh. I am 22 year old.<br />
+                    <strong style="color: var(--blue)">AI:</strong> Nice to meet
+                    you, Minh!
+                    <span style="color: var(--orange-dark); font-size: 0.8rem"
+                      >📝 "22 years old" (plural)</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="feat-card">
+                  <div class="ex-meta">
+                    <span class="ex-tag tag-mc">B1 · Công việc</span>
+                  </div>
+                  <p
+                    style="
+                      font-size: 0.85rem;
+                      color: var(--muted);
+                      line-height: 1.65;
+                    "
+                  >
+                    <strong style="color: var(--text)">User:</strong> I work in
+                    a company since 2 years.<br />
+                    <strong style="color: var(--blue)">AI:</strong> Great!
+                    <span style="color: var(--orange-dark); font-size: 0.8rem"
+                      >📝 "I have worked... for 2 years"</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /page-chatbot -->
+
+    <!-- ══════════════════════════════
+     PAGE: EXERCISES
+════════════════════════════════ -->
+    <div id="page-exercises" class="page">
+      <div class="section">
+        <div class="container" style="max-width: 900px">
+          <div class="section-label">Tính năng 02</div>
+          <h2 class="section-title mb-1">Bài Tập Luyện Ngoại Ngữ</h2>
+          <div class="title-line"></div>
+          <p class="section-sub mb-4">
+            83+ câu hỏi – 5 dạng bài – 4 ngôn ngữ – lọc theo cấp độ &amp; loại
+            bài
+          </p>
+
+          <!-- Filter Panel -->
+          <div class="filter-panel mb-4">
+            <div class="filter-row">
+              <span class="filter-label"
+                ><i class="bi bi-translate me-1"></i>Ngôn ngữ</span
+              >
+              <div class="filter-chips">
+                <button
+                  class="filter-chip selected ex-lang-btn"
+                  data-lang="english"
+                >
+                  🇺🇸 Tiếng Anh
+                </button>
+                <button class="filter-chip ex-lang-btn" data-lang="japanese">
+                  🇯🇵 Tiếng Nhật
+                </button>
+                <button class="filter-chip ex-lang-btn" data-lang="korean">
+                  🇰🇷 Tiếng Hàn
+                </button>
+                <button class="filter-chip ex-lang-btn" data-lang="french">
+                  🇫🇷 Tiếng Pháp
+                </button>
+              </div>
+            </div>
+            <div class="filter-divider"></div>
+            <div class="filter-row">
+              <span class="filter-label"
+                ><i class="bi bi-grid me-1"></i>Dạng bài</span
+              >
+              <div class="filter-chips">
+                <button
+                  class="filter-chip selected ex-type-btn"
+                  data-type="all"
+                >
+                  🔍 Tất cả
+                </button>
+                <button class="filter-chip ex-type-btn" data-type="fill">
+                  ✏️ Điền từ
+                </button>
+                <button class="filter-chip ex-type-btn" data-type="mc">
+                  🔘 Trắc nghiệm
+                </button>
+                <button class="filter-chip ex-type-btn" data-type="translate">
+                  🌐 Dịch câu
+                </button>
+                <button class="filter-chip ex-type-btn" data-type="order">
+                  🔀 Sắp xếp
+                </button>
+                <button class="filter-chip ex-type-btn" data-type="match">
+                  🔗 Nối từ
+                </button>
+              </div>
+            </div>
+            <div class="filter-divider"></div>
+            <div class="filter-row">
+              <span class="filter-label"
+                ><i class="bi bi-bar-chart me-1"></i>Cấp độ</span
+              >
+              <div class="filter-chips">
+                <button
+                  class="filter-chip selected ex-level-btn"
+                  data-level="all"
+                >
+                  📚 Tất cả
+                </button>
+                <button class="filter-chip ex-level-btn" data-level="A1">
+                  <span class="lvl-dot lvl-a1"></span>A1
+                </button>
+                <button class="filter-chip ex-level-btn" data-level="A2">
+                  <span class="lvl-dot lvl-a2"></span>A2
+                </button>
+                <button class="filter-chip ex-level-btn" data-level="B1">
+                  <span class="lvl-dot lvl-b1"></span>B1
+                </button>
+                <button class="filter-chip ex-level-btn" data-level="B2">
+                  <span class="lvl-dot lvl-b2"></span>B2
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Score & Progress -->
+          <div
+            class="d-flex justify-content-between align-items-center mb-2 flex-wrap gap-2"
+          >
+            <div class="d-flex align-items-center gap-3">
+              <span
+                style="font-size: 0.8rem; color: var(--muted); font-weight: 600"
+                id="progress-lbl"
+                >0/0 đã hoàn thành</span
+              >
+              <span
+                style="
+                  font-size: 0.78rem;
+                  color: var(--muted);
+                  font-weight: 600;
+                "
+                id="ex-count"
+                >0 câu hỏi</span
+              >
+            </div>
+            <div class="score-pill">
+              <i class="bi bi-star-fill"></i
+              ><span id="score-display">0 / 0</span>
+            </div>
+          </div>
+          <div class="progress-track mb-4">
+            <div class="progress-fill" id="ex-progress" style="width: 0%"></div>
+          </div>
+
+          <div id="ex-container"></div>
+        </div>
+      </div>
+    </div>
+    <!-- /page-exercises -->
+
+    <!-- ══════════════════════════════
+     PAGE: PRONUNCIATION
+════════════════════════════════ -->
+    <div id="page-pronunciation" class="page">
+      <div class="section">
+        <div class="container" style="max-width: 820px">
+          <div class="section-label">Tính năng 03</div>
+          <h2 class="section-title mb-1">Kiểm Tra Phát Âm</h2>
+          <div class="title-line"></div>
+          <p class="section-sub mb-4">
+            Audio mẫu TTS, phiên âm IPA chuẩn quốc tế và luyện phát âm theo cấp
+            độ
+          </p>
+
+          <ul class="nav lang-tabs mb-4 flex-wrap gap-1" style="border: none">
+            <li class="nav-item">
+              <button class="nav-link active lang-tab-btn" data-lang="english">
+                🇺🇸 English
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link lang-tab-btn" data-lang="japanese">
+                🇯🇵 日本語
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link lang-tab-btn" data-lang="korean">
+                🇰🇷 한국어
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link lang-tab-btn" data-lang="french">
+                🇫🇷 Français
+              </button>
+            </li>
+          </ul>
+
+          <div id="audio-container"></div>
+
+          <div
+            class="feat-card mt-4"
+            style="border-left: 4px solid var(--orange)"
+          >
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <i
+                class="bi bi-lightbulb-fill text-orange"
+                style="font-size: 1.1rem"
+              ></i>
+              <strong style="color: var(--navy)"
+                >Mẹo luyện phát âm hiệu quả</strong
+              >
+            </div>
+            <ul
+              style="
+                color: var(--muted);
+                font-size: 0.85rem;
+                line-height: 1.8;
+                padding-left: 1.25rem;
+                margin: 0;
+              "
+            >
+              <li>Nghe audio mẫu ít nhất 3 lần trước khi thử phát âm</li>
+              <li>Chú ý ký hiệu phiên âm IPA để hiểu đúng cách phát âm</li>
+              <li>Luyện tập từng âm riêng lẻ trước khi ghép câu hoàn chỉnh</li>
+              <li>Sử dụng tính năng ghi âm trong Chatbot để so sánh với mẫu</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /page-pronunciation -->
+
+    <!-- ══════════════════════════════
+     PAGE: EVALUATION
+════════════════════════════════ -->
+    <div id="page-evaluation" class="page">
+      <div class="section">
+        <div class="container" style="max-width: 820px">
+          <div class="section-label">Tính năng 04</div>
+          <h2 class="section-title mb-1">Đánh Giá Chất Lượng AI</h2>
+          <div class="title-line"></div>
+          <p class="section-sub mb-4">
+            So sánh hiệu quả phản hồi AI so với giáo viên thực trong việc sửa
+            lỗi ngữ pháp
+          </p>
+
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="eval-card">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                  <div
+                    class="feat-icon icon-blue mb-0"
+                    style="width: 38px; height: 38px; font-size: 1rem"
+                  >
+                    🤖
+                  </div>
+                  <div>
+                    <div style="font-weight: 800; color: var(--navy)">
+                      AI Tutor (ChatGPT)
+                    </div>
+                    <div
+                      style="
+                        font-size: 0.75rem;
+                        color: var(--muted);
+                        font-weight: 600;
+                      "
+                    >
+                      Phản hồi tự động
+                    </div>
+                  </div>
+                </div>
+                <div class="rating-bar-wrap">
+                  <div class="rating-lbl">
+                    <span>Tốc độ phản hồi</span><span>98%</span>
+                  </div>
+                  <div class="rating-bar">
+                    <div
+                      class="rating-fill"
+                      data-pct="98"
+                      style="width: 0%"
+                    ></div>
+                  </div>
+                </div>
+                <div class="rating-bar-wrap">
+                  <div class="rating-lbl">
+                    <span>Phát hiện lỗi ngữ pháp</span><span>85%</span>
+                  </div>
+                  <div class="rating-bar">
+                    <div
+                      class="rating-fill"
+                      data-pct="85"
+                      style="width: 0%"
+                    ></div>
+                  </div>
+                </div>
+                <div class="rating-bar-wrap">
+                  <div class="rating-lbl">
+                    <span>Giải thích rõ ràng</span><span>80%</span>
+                  </div>
+                  <div class="rating-bar">
+                    <div
+                      class="rating-fill"
+                      data-pct="80"
+                      style="width: 0%"
+                    ></div>
+                  </div>
+                </div>
+                <div class="rating-bar-wrap">
+                  <div class="rating-lbl">
+                    <span>Ngữ cảnh tự nhiên</span><span>75%</span>
+                  </div>
+                  <div class="rating-bar">
+                    <div
+                      class="rating-fill"
+                      data-pct="75"
+                      style="width: 0%"
+                    ></div>
+                  </div>
+                </div>
+                <div class="rating-bar-wrap">
+                  <div class="rating-lbl">
+                    <span>Sẵn sàng 24/7</span><span>100%</span>
+                  </div>
+                  <div class="rating-bar">
+                    <div
+                      class="rating-fill"
+                      data-pct="100"
+                      style="width: 0%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="eval-card">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                  <div
+                    class="feat-icon icon-orange mb-0"
+                    style="width: 38px; height: 38px; font-size: 1rem"
+                  >
+                    👩‍🏫
+                  </div>
+                  <div>
+                    <div style="font-weight: 800; color: var(--navy)">
+                      Giáo viên thực
+                    </div>
+                    <div
+                      style="
+                        font-size: 0.75rem;
+                        color: var(--muted);
+                        font-weight: 600;
+                      "
+                    >
+                      Phản hồi thủ công
+                    </div>
+                  </div>
+                </div>
+                <div class="rating-bar-wrap">
+                  <div class="rating-lbl">
+                    <span>Tốc độ phản hồi</span><span>40%</span>
+                  </div>
+                  <div class="rating-bar">
+                    <div
+                      class="rating-fill"
+                      data-pct="40"
+                      style="width: 0%"
+                    ></div>
+                  </div>
+                </div>
+                <div class="rating-bar-wrap">
+                  <div class="rating-lbl">
+                    <span>Phát hiện lỗi ngữ pháp</span><span>95%</span>
+                  </div>
+                  <div class="rating-bar">
+                    <div
+                      class="rating-fill"
+                      data-pct="95"
+                      style="width: 0%"
+                    ></div>
+                  </div>
+                </div>
+                <div class="rating-bar-wrap">
+                  <div class="rating-lbl">
+                    <span>Giải thích rõ ràng</span><span>95%</span>
+                  </div>
+                  <div class="rating-bar">
+                    <div
+                      class="rating-fill"
+                      data-pct="95"
+                      style="width: 0%"
+                    ></div>
+                  </div>
+                </div>
+                <div class="rating-bar-wrap">
+                  <div class="rating-lbl">
+                    <span>Ngữ cảnh tự nhiên</span><span>98%</span>
+                  </div>
+                  <div class="rating-bar">
+                    <div
+                      class="rating-fill"
+                      data-pct="98"
+                      style="width: 0%"
+                    ></div>
+                  </div>
+                </div>
+                <div class="rating-bar-wrap">
+                  <div class="rating-lbl">
+                    <span>Sẵn sàng 24/7</span><span>25%</span>
+                  </div>
+                  <div class="rating-bar">
+                    <div
+                      class="rating-fill"
+                      data-pct="25"
+                      style="width: 0%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="feat-card mt-4"
+            style="border-left: 4px solid var(--orange)"
+          >
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <i
+                class="bi bi-trophy-fill text-orange"
+                style="font-size: 1.1rem"
+              ></i>
+              <strong style="color: var(--navy)">Kết luận đánh giá</strong>
+            </div>
+            <p
+              style="
+                color: var(--muted);
+                font-size: 0.88rem;
+                line-height: 1.75;
+                margin: 0;
+              "
+            >
+              AI Tutor vượt trội về
+              <strong style="color: var(--blue)">tốc độ và tính sẵn sàng</strong
+              >, phù hợp luyện tập hàng ngày. Giáo viên thực vượt trội về
+              <strong style="color: var(--orange-dark)"
+                >độ chính xác ngữ cảnh</strong
+              >
+              và hiểu sâu người học.
+              <strong style="color: var(--navy)">Kết hợp cả hai</strong> là
+              phương pháp tối ưu nhất tại IELTS Journey.
+            </p>
+          </div>
+
+          <div class="mt-4">
+            <div class="section-label">5 đoạn hội thoại mẫu</div>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="feat-card">
+                  <span class="ex-tag tag-fill me-2">A1</span
+                  ><span style="font-weight: 600"
+                    >Giới thiệu bản thân cơ bản</span
+                  >
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="feat-card">
+                  <span class="ex-tag tag-mc me-2">A2</span
+                  ><span style="font-weight: 600">Mua hàng tại siêu thị</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="feat-card">
+                  <span class="ex-tag tag-trans me-2">B1</span
+                  ><span style="font-weight: 600">Hỏi đường tại thành phố</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="feat-card">
+                  <span class="ex-tag tag-order me-2">B1</span
+                  ><span style="font-weight: 600">Đặt bàn tại nhà hàng</span>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="feat-card">
+                  <span class="ex-tag tag-match me-2">B2</span
+                  ><span style="font-weight: 600"
+                    >Phỏng vấn xin việc bằng tiếng Anh chuyên nghiệp</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /page-evaluation -->
+
+    <!-- ══════════════════════════════
+     FOOTER
+════════════════════════════════ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-md-4">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <img src="assets/logo.png" alt="Logo" style="height: 40px" />
+              <div class="footer-brand">
+                <span class="footer-orange">IELTS</span> JOURNEY
+              </div>
+            </div>
+            <p class="footer-desc">Khai phá tiềm năng – Chinh phục băng điểm</p>
+          </div>
+          <div class="col-md-4 text-md-center">
+            <div class="d-flex gap-3 justify-content-md-center flex-wrap">
+              <a class="footer-link" href="#" data-page="home">Tổng quan</a>
+              <a class="footer-link" href="#" data-page="chatbot">Chatbot</a>
+              <a class="footer-link" href="#" data-page="exercises">Bài tập</a>
+              <a class="footer-link" href="#" data-page="pronunciation"
+                >Phát âm</a
+              >
+            </div>
+            <div
+              class="mt-2"
+              style="color: rgba(255, 255, 255, 0.5); font-size: 0.8rem"
+            >
+              📍 123 Đường Sư Vạn Hạnh, Q.10, TP.HCM
+            </div>
+          </div>
+          <div class="col-md-4 text-md-end">
+            <div
+              style="
+                color: var(--orange);
+                font-weight: 700;
+                margin-bottom: 0.3rem;
+              "
+            >
+              <i class="bi bi-telephone-fill me-1"></i>0987.654.321
+            </div>
+            <div
+              style="
+                color: rgba(255, 255, 255, 0.55);
+                font-size: 0.82rem;
+                margin-bottom: 0.3rem;
+              "
+            >
+              🌐 www.ieltsjourney.edu.vn
+            </div>
+            <p class="footer-copy">
+              © 2024 IELTS Journey · All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
